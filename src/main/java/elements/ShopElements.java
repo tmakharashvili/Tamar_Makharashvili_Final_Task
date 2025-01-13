@@ -1,0 +1,54 @@
+package elements;
+
+import org.openqa.selenium.By;
+import utils.SetUpClassSelenium;
+
+public class ShopElements extends SetUpClassSelenium {
+    public By emailFieldLocator = By.id("reg_email");
+    public By passwordFieldLocator = By.id("reg_password");
+    public By registerButtonLocator = By.name("register");
+    public By shop = By.linkText("Shop");
+    public By filterJavaScript = By.xpath("//*//a [text()='JavaScript']");
+    public By filteredBooks = By.xpath("//div[@class='woocommerce']//li[contains(@class, 'product')]//h3");
+    public By addToCartButton = By.cssSelector(".product:nth-child(1) .add_to_cart_button");
+    public By cartCount = By.xpath("//span[@class='cartcontents']");
+    public By cartIcon = By.xpath("//*[@id=\"wpmenucartli\"]/a/i");
+    public By removeButton = By.xpath("//*//div [@class='woocommerce']//tr [@class='cart_item']//a [text()='×']");
+    public By emptyCartMessage = By.xpath("//p[@class='cart-empty']");
+    public By productInCart = By.cssSelector(".cart_item .product-name");
+    public By html5Book = By.xpath("//*[@id=\"woocommerce_product_categories-2\"]/ul/li[2]/a");
+    public By addHtml5BookToCart = By.xpath("//*//li[.//h3[text()='HTML5 Forms']]//a[text()='Add to basket']");
+    public By seleniumRubyBook = By.xpath("//*[@id=\"woocommerce_product_categories-2\"]/ul/li[4]/a");
+    public By addSeleniumRubyToCart = By.xpath("//*//li[.//h3[text()='Selenium Ruby']]//a[text()='Add to basket']");
+    public By couponField = By.id("coupon_code");
+    public By applyCouponButton = By.name("apply_coupon");
+    public By couponAppliedMessage = By.cssSelector(".woocommerce-message");
+    public By cartTotal = By.cssSelector(".order-total .amount");
+    public By subToTal = By.cssSelector(".cart-subtotal .amount");
+    public By removeCouponButton = By.cssSelector(".woocommerce-remove-coupon");
+    public By proceedToCheckoutButton = By.xpath("//a[contains(@class,'checkout-button')]");
+    public By firstNameField = By.id("billing_first_name");
+    public By lastNameField = By.id("billing_last_name");
+    public By emailField = By.id("billing_email");
+    public By phoneField = By.id("billing_phone");
+    public By addressField = By.id("billing_address_1");
+    public By cityField = By.id("billing_city");
+    public By postalCodeField = By.id("billing_postcode");
+    public By cashOnDeliveryRadioButton = By.id("payment_method_cod");
+    public By placeOrderButton = By.id("place_order");
+    public By orderReceivedMessage = By.className("woocommerce-thankyou-order-received");
+    public By paymentMethodLabel = By.xpath("//*[@id=\"page-35\"]/div/div[1]/table[1]/tfoot/tr[3]/td");
+    public By myAccountLink = By.xpath("//a[contains(text(),'My Account')]");
+    public By ordersLink = By.xpath("//a[contains(text(),'Orders')]");
+    public By orderNumber = By.cssSelector("tr.order");
+    public By loginEmailField = By.id("username");
+    public By loginPasswordField = By.id("password");
+    public By loginButton = By.name("login");
+    public By accountDetailsLink = By.xpath("//a[contains(text(),'Account Details')]");
+    public By currentPasswordField = By.id("password_current");
+    public By newPasswordField = By.id("password_1");
+    public By confirmPasswordField = By.id("password_2");
+    public By saveChangesButton = By.xpath("//*[@id=\"page-36\"]/div/div[1]/div/form/p[4]/input[3]");
+    public By logOut = By.xpath("//*[@id=\"page-36\"]/div/div[1]/div[2]/p[1]/a");
+    public By accountUsername = By.xpath("//*[@id=\"page-36\"]/div/div[1]/div/p[1]/strong");
+}
